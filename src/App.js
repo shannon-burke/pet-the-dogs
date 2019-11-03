@@ -1,33 +1,38 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import ImageCard from "./components/ImageCard";
-import dogs from "dogs.json";
+import ImageSection from "./components/ImageSection";
+import Dogs from "./Dogs.json";
 
-function App() {
+
+class App extends Component {
 
   state = {
-    dogs,
+    Dogs,
     currentScore: 0,
     leftToWin: 9
   };
 
-  return (
-    <div className="container">
-      <Header
-        currentScore={this.state.currentScore}
-        leftToWin={this.state.leftToWin}
-      />
-
-      {this.state.dogs.map(dog => (
-        <ImageCard
-          src={dog.src}
-          alt={dog.src}
+  render() {
+    //console.log(this.state.currentScore);
+    return (
+      <div>
+        <Header
+          currentScore={this.state.currentScore}
+          leftToWin={this.state.leftToWin}
         />
-      ))}
-
-    </div>
-  );
+        <ImageSection>
+          {this.state.Dogs.map(dog => (
+            <ImageCard
+              src={dog.src}
+              alt={dog.alt}
+            />
+          ))}
+        </ImageSection>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -1,7 +1,13 @@
 import React, { Component } from "react"
-
+import Dogs from "../../Dogs.json"
 
 class ImageCard extends Component {
+    state = {
+        Dogs,
+        currentScore: 0,
+        leftToWin: 9
+    };
+
     render(props) {
         return (
             <div>
