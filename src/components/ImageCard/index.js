@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 // import Dogs from "../../Dogs.json"
+import "./style.css";
 
 class ImageCard extends Component {
     // state = {
@@ -10,13 +11,11 @@ class ImageCard extends Component {
 
     render(props) {
         return (
-            <div>
-                <div class="col s12 m4">
-                    <div class="card-panel">
-                        <img src={this.props.src} className="dog-image" alt={this.props.alt} />
-                    </div>
-                </div>
+
+            <div className="col s4 m4 l4">
+                <img src={this.props.src} className="dog-image" alt={this.props.alt} onClick={() => this.props.clickFunction(this.props.id)} />
             </div>
+
         )
     }
 }

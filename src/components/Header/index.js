@@ -6,7 +6,7 @@ class Header extends Component {
 
     render(props) {
         //super(props);
-        console.log(props);
+        //console.log(props);
         return (
             <div>
                 <nav>
