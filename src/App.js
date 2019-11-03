@@ -22,14 +22,14 @@ class App extends Component {
           currentScore={this.state.currentScore}
           leftToWin={this.state.leftToWin}
         />
-        <ImageSection>
-          {this.state.Dogs.map(dog => (
-            <ImageCard
-              src={dog.src}
-              alt={dog.alt}
-            />
-          ))}
-        </ImageSection>
+
+        {this.state.Dogs.map(dog => (
+          <ImageCard
+            src={dog.src}
+            alt={dog.alt}
+          />
+        ))}
+
       </div>
     );
   }
