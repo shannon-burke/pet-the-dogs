@@ -20,7 +20,7 @@ class App extends Component {
 
   increaseScore() {
     this.setState({ currentScore: this.state.currentScore + 1 })
-    console.log("increased score to" + this.state.currentScore)
+    //console.log("increased score to" + this.state.currentScore)
   };
 
 
@@ -39,7 +39,6 @@ class App extends Component {
 
   render() {
     //console.log(this.state.currentScore);
-    this.clickFunction();
     return (
       <div>
         <Header
@@ -54,6 +53,7 @@ class App extends Component {
                 alt={dog.alt}
                 key={dog.id}
                 id={dog.id}
+                clickFunction={this.clickfunction}
               />
             ))}
           </div>
