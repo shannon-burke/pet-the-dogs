@@ -1,0 +1,47 @@
+[
+    {
+        "src": "./images/Baloo.jpg",
+        "alt": "Baloo",
+        "id": 1
+    },
+    {
+        "src": "./images/Brutus.jpg",
+        "alt": "Brutus",
+        "id": 2
+    },
+    {
+        "src": "./images/Cornelius.jpg",
+        "alt": "Cornelius",
+        "id": 3
+    },
+    {
+        "src": "./images/Delilah.jpg",
+        "alt": "Delilah",
+        "id": 4
+    },
+    {
+        "src": "./images/Doug.jpg",
+        "alt": "Doug",
+        "id": 5
+    },
+    {
+        "src": "./images/Ein.jpg",
+        "alt": "Ein",
+        "id": 6
+    },
+    {
+        "src": "./images/Jet.jpg",
+        "alt": "Jet",
+        "id": 7
+    },
+    {
+        "src": "./images/Reginald.jpg",
+        "alt": "Reginald",
+        "id": 8
+    },
+    {
+        "src": "./images/ShakyJim.jpg",
+        "alt": "Shaky Jim",
+        "id": 9
+    }
+]
