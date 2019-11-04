@@ -53,7 +53,7 @@ class App extends Component {
                 alt={dog.alt}
                 key={dog.id}
                 id={dog.id}
-                clickFunction={this.clickfunction}
+                clickFunction={this.clickFunction}
               />
             ))}
           </div>
