@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/pet-the-dogs/static/css/main.2331858c.chunk.css",
+    "main.js": "/pet-the-dogs/static/js/main.587de086.chunk.js",
+    "main.js.map": "/pet-the-dogs/static/js/main.587de086.chunk.js.map",
+    "runtime-main.js": "/pet-the-dogs/static/js/runtime-main.a89bf5e1.js",
+    "runtime-main.js.map": "/pet-the-dogs/static/js/runtime-main.a89bf5e1.js.map",
+    "static/js/2.0c1375de.chunk.js": "/pet-the-dogs/static/js/2.0c1375de.chunk.js",
+    "static/js/2.0c1375de.chunk.js.map": "/pet-the-dogs/static/js/2.0c1375de.chunk.js.map",
+    "index.html": "/pet-the-dogs/index.html",
+    "precache-manifest.b8b0c1f448bb3c1f06329d0e769ad424.js": "/pet-the-dogs/precache-manifest.b8b0c1f448bb3c1f06329d0e769ad424.js",
+    "service-worker.js": "/pet-the-dogs/service-worker.js",
+    "static/css/main.2331858c.chunk.css.map": "/pet-the-dogs/static/css/main.2331858c.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a89bf5e1.js",
+    "static/js/2.0c1375de.chunk.js",
+    "static/css/main.2331858c.chunk.css",
+    "static/js/main.587de086.chunk.js"
+  ]
+}
