@@ -11,34 +11,46 @@ class App extends Component {
   state = {
     Dogs,
     currentScore: 0,
-    leftToWin: 9
+    leftToWin: Dogs.length
   };
 
-  randomizer() {
-
+  scramble() {
+    console.log("scramble");
   };
 
   increaseScore() {
-    this.setState({ currentScore: this.state.currentScore + 1 })
-    //console.log("increased score to" + this.state.currentScore)
+    this.setState({ currentScore: this.state.currentScore + 1 });
+    this.setState({ leftToWin: this.state.leftToWin - 1 });
+    //console.log("increased score to" + this.state.currentScore);
   };
 
 
   gameWin() {
-
+    alert("Good job! You petted all the doggos. Now, do it again!");
+    this.gameReset();
   };
 
   gameReset() {
-
+    this.setState({ currentScore: 0 });
+    this.setState({ leftToWin: Dogs.length });
   };
 
-  clickFunction(id) {
-    console.log("test");
-    console.log(id);
+  clickFunction = id => {
+    //console.log(this);
+    this.increaseScore();
+    if (this.state.currentScore < Dogs.length) {
+      this.scramble();
+      //console.log(this.state.currentScore);
+    }
+    else {
+      this.gameWin();
+    };
+
+
   };
 
   render() {
-    //console.log(this.state.currentScore);
+    console.log(this.state.currentScore);
     return (
       <div>
         <Header
